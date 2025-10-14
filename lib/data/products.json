@@ -1,0 +1,306 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Marinade Penja Classique",
+    "slug": "marinade-penja-classique",
+    "categories": ["marinades"],
+    "price": 12.90,
+    "regular_price": 12.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 50,
+    "images": [
+      "https://images.unsplash.com/photo-1591271955631-f6167c3d3564"
+    ],
+    "short_description": "Marinade artisanale au poivre de Penja authentique",
+    "description": "Notre marinade signature préparée avec le célèbre poivre de Penja du Cameroun. Parfaite pour sublimer vos viandes et légumes grillés. Un mélange harmonieux d'épices et d'huiles sélectionnées avec soin.",
+    "variations": [
+      {"id": "var-001-1", "name": "250ml", "price": 12.90},
+      {"id": "var-001-2", "name": "500ml", "price": 22.90}
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-002",
+    "name": "Poivre de Penja Noir",
+    "slug": "poivre-penja-noir",
+    "categories": ["peppers", "peppers-noir"],
+    "price": 15.90,
+    "regular_price": 15.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 100,
+    "images": [
+      "https://images.unsplash.com/photo-1602716133884-67f7d39d0238"
+    ],
+    "short_description": "Poivre noir de Penja AOP en grains entiers",
+    "description": "Le poivre de Penja est réputé mondialement pour ses arômes exceptionnels. Cultivé dans la région de Penja au Cameroun, ce poivre noir offre des notes florales et fruitées uniques. IGP garanti.",
+    "variations": [
+      {"id": "var-002-1", "name": "50g", "price": 15.90},
+      {"id": "var-002-2", "name": "100g", "price": 28.90}
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-003",
+    "name": "Poivre de Penja Rouge",
+    "slug": "poivre-penja-rouge",
+    "categories": ["peppers", "peppers-rouge"],
+    "price": 18.90,
+    "regular_price": 18.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 75,
+    "images": [
+      "https://images.unsplash.com/photo-1649951806971-ad0e00408773"
+    ],
+    "short_description": "Poivre rouge de Penja rare et précieux",
+    "description": "Le poivre rouge de Penja est la perle rare de notre collection. Récolté à pleine maturité, il développe des arômes doux et fruités incomparables. Production limitée.",
+    "variations": [
+      {"id": "var-003-1", "name": "30g", "price": 18.90},
+      {"id": "var-003-2", "name": "50g", "price": 29.90}
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-004",
+    "name": "Mélange d'Épices Provençales",
+    "slug": "melange-epices-provencales",
+    "categories": ["spices"],
+    "price": 9.90,
+    "regular_price": 9.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 120,
+    "images": [
+      "https://images.unsplash.com/photo-1758745464235-ccb8c1253074"
+    ],
+    "short_description": "Mélange aromatique du sud de la France",
+    "description": "Un voyage gustatif en Provence avec ce mélange harmonieux de thym, romarin, basilic et lavande. Idéal pour parfumer vos grillades et ratatouilles.",
+    "variations": [
+      {"id": "var-004-1", "name": "40g", "price": 9.90}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-005",
+    "name": "Confiture de Figues",
+    "slug": "confiture-figues",
+    "categories": ["jams"],
+    "price": 8.50,
+    "regular_price": 8.50,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 60,
+    "images": [
+      "https://images.unsplash.com/photo-1585678668451-ecd744ae0a1b"
+    ],
+    "short_description": "Confiture artisanale de figues violettes",
+    "description": "Confiture généreuse préparée avec des figues violettes gorgées de soleil. Parfaite sur du pain frais ou accompagnant fromages et foie gras. 65% de fruits.",
+    "variations": [
+      {"id": "var-005-1", "name": "250g", "price": 8.50},
+      {"id": "var-005-2", "name": "500g", "price": 15.50}
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-006",
+    "name": "Sirop de Lavande",
+    "slug": "sirop-lavande",
+    "categories": ["syrups"],
+    "price": 11.90,
+    "regular_price": 11.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 40,
+    "images": [
+      "https://images.unsplash.com/photo-1530388489801-7e31e6d2bd63"
+    ],
+    "short_description": "Sirop artisanal à la lavande de Provence",
+    "description": "Sirop délicat élaboré avec des fleurs de lavande cueillies en Provence. Sublime vos boissons fraîches, cocktails et desserts avec sa note florale unique.",
+    "variations": [
+      {"id": "var-006-1", "name": "350ml", "price": 11.90}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-007",
+    "name": "Marinade Agrumes & Herbes",
+    "slug": "marinade-agrumes-herbes",
+    "categories": ["marinades"],
+    "price": 13.50,
+    "regular_price": 13.50,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1680902007083-30cc532e99f0"
+    ],
+    "short_description": "Marinade fraîche aux agrumes et fines herbes",
+    "description": "Marinade vivifiante alliant citron, orange et un bouquet de fines herbes. Idéale pour poissons et volailles. Une explosion de fraîcheur dans votre assiette.",
+    "variations": [
+      {"id": "var-007-1", "name": "250ml", "price": 13.50}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-008",
+    "name": "Épices Tandoori",
+    "slug": "epices-tandoori",
+    "categories": ["spices"],
+    "price": 10.90,
+    "regular_price": 10.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 80,
+    "images": [
+      "https://images.unsplash.com/photo-1663325265966-0d17de3e85c5"
+    ],
+    "short_description": "Mélange d'épices indien authentique",
+    "description": "Mélange traditionnel pour vos plats tandoori : curcuma, coriandre, cumin, paprika et nos épices secrètes. Transformez vos marinades et currys.",
+    "variations": [
+      {"id": "var-008-1", "name": "50g", "price": 10.90}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-009",
+    "name": "Confiture d'Abricots",
+    "slug": "confiture-abricots",
+    "categories": ["jams"],
+    "price": 7.90,
+    "regular_price": 7.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 70,
+    "images": [
+      "https://images.pexels.com/photos/6588622/pexels-photo-6588622.jpeg"
+    ],
+    "short_description": "Confiture traditionnelle d'abricots du Roussillon",
+    "description": "Confiture onctueuse préparée avec des abricots du Roussillon récoltés à maturité. Saveur sucrée et légèrement acidulée. 60% de fruits.",
+    "variations": [
+      {"id": "var-009-1", "name": "250g", "price": 7.90}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-010",
+    "name": "Sirop de Citron Vert",
+    "slug": "sirop-citron-vert",
+    "categories": ["syrups"],
+    "price": 10.90,
+    "regular_price": 10.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 55,
+    "images": [
+      "https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg"
+    ],
+    "short_description": "Sirop acidulé au citron vert",
+    "description": "Sirop rafraîchissant au citron vert, parfait pour vos mojitos, limonades et pâtisseries. Note acidulée garantie !",
+    "variations": [
+      {"id": "var-010-1", "name": "350ml", "price": 10.90}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-011",
+    "name": "Poivre de Penja Blanc",
+    "slug": "poivre-penja-blanc",
+    "categories": ["peppers", "peppers-blanc"],
+    "price": 16.90,
+    "regular_price": 16.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 65,
+    "images": [
+      "https://images.unsplash.com/photo-1649952052743-5e8f37c348c5"
+    ],
+    "short_description": "Poivre blanc de Penja au goût délicat",
+    "description": "Poivre blanc de Penja au profil aromatique subtil et élégant. Idéal pour les sauces blanches et poissons fins. Une délicatesse rare.",
+    "variations": [
+      {"id": "var-011-1", "name": "50g", "price": 16.90}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-012",
+    "name": "Cannelle de Ceylan",
+    "slug": "cannelle-ceylan",
+    "categories": ["spices"],
+    "price": 12.50,
+    "regular_price": 12.50,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 90,
+    "images": [
+      "https://images.unsplash.com/photo-1590237581598-988d27565521"
+    ],
+    "short_description": "Cannelle de Ceylan véritable en bâtons",
+    "description": "Cannelle authentique de Ceylan (Sri Lanka), la vraie cannelle aux notes douces et complexes. Bâtons entiers à râper pour un maximum de fraîcheur.",
+    "variations": [
+      {"id": "var-012-1", "name": "30g", "price": 12.50}
+    ],
+    "featured": false
+  },
+  {
+    "id": "prod-013",
+    "name": "Marinade Miel & Moutarde",
+    "slug": "marinade-miel-moutarde",
+    "categories": ["marinades"],
+    "price": 11.90,
+    "regular_price": 13.90,
+    "sale_price": 11.90,
+    "stock_status": "instock",
+    "stock_quantity": 35,
+    "images": [
+      "https://images.unsplash.com/photo-1695924274007-82018762e6bc"
+    ],
+    "short_description": "Marinade sucrée-salée miel et moutarde à l'ancienne",
+    "description": "Alliance parfaite entre le miel de nos ruches locales et la moutarde à l'ancienne. Sublime vos grillades de porc et poulet. En promotion !",
+    "variations": [
+      {"id": "var-013-1", "name": "250ml", "price": 11.90}
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-014",
+    "name": "Confiture de Fraises des Bois",
+    "slug": "confiture-fraises-bois",
+    "categories": ["jams"],
+    "price": 9.50,
+    "regular_price": 9.50,
+    "sale_price": null,
+    "stock_status": "lowstock",
+    "stock_quantity": 15,
+    "images": [
+      "https://images.pexels.com/photos/13939354/pexels-photo-13939354.jpeg"
+    ],
+    "short_description": "Confiture rare aux fraises des bois sauvages",
+    "description": "Confiture d'exception préparée avec des fraises des bois cueillies à la main. Arôme intense et authentique. Production limitée - Stock faible !",
+    "variations": [
+      {"id": "var-014-1", "name": "220g", "price": 9.50}
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-015",
+    "name": "Sirop de Rose",
+    "slug": "sirop-rose",
+    "categories": ["syrups"],
+    "price": 12.90,
+    "regular_price": 12.90,
+    "sale_price": null,
+    "stock_status": "instock",
+    "stock_quantity": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1654158168200-f8e241edb386"
+    ],
+    "short_description": "Sirop floral à la rose de Damas",
+    "description": "Sirop délicat élaboré avec des pétales de rose de Damas. Parfume subtilement vos thés glacés, pâtisseries orientales et cocktails raffinés.",
+    "variations": [
+      {"id": "var-015-1", "name": "350ml", "price": 12.90}
+    ],
+    "featured": false
+  }
+]

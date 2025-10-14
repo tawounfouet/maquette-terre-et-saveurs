@@ -1,0 +1,56 @@
+[
+  {
+    "id": "test-001",
+    "name": "Sophie Martin",
+    "location": "Paris",
+    "rating": 5,
+    "text": "Le poivre de Penja est tout simplement exceptionnel ! J'ai découvert des saveurs que je ne connaissais pas. La qualité est au rendez-vous et le service client est irréprochable.",
+    "date": "2024-12-01",
+    "product": "Poivre de Penja Noir"
+  },
+  {
+    "id": "test-002",
+    "name": "Marc Dubois",
+    "location": "Lyon",
+    "rating": 5,
+    "text": "Les marinades sont délicieuses ! J'ai essayé la marinade classique au Penja et mes barbecues n'ont jamais été aussi réussis. Mes invités me demandent toujours la recette !",
+    "date": "2024-11-25",
+    "product": "Marinade Penja Classique"
+  },
+  {
+    "id": "test-003",
+    "name": "Isabelle Rousseau",
+    "location": "Bordeaux",
+    "rating": 5,
+    "text": "La confiture de figues est une tuerie ! Texture parfaite, goût authentique. On sent vraiment la qualité des produits et le savoir-faire artisanal. Je recommande à 200% !",
+    "date": "2024-11-20",
+    "product": "Confiture de Figues"
+  },
+  {
+    "id": "test-004",
+    "name": "Jean-Pierre Lefort",
+    "location": "Marseille",
+    "rating": 5,
+    "text": "En tant que chef cuisinier, je suis très exigeant sur la qualité des épices. Terre et Saveurs propose des produits d'exception qui subliment mes plats. Le poivre rouge est une pépite rare.",
+    "date": "2024-11-15",
+    "product": "Poivre de Penja Rouge"
+  },
+  {
+    "id": "test-005",
+    "name": "Amélie Petit",
+    "location": "Toulouse",
+    "rating": 5,
+    "text": "Les sirops sont parfaits pour mes cocktails maison ! Le sirop de lavande apporte une touche provençale unique. Livraison rapide et emballage soigné.",
+    "date": "2024-11-10",
+    "product": "Sirop de Lavande"
+  },
+  {
+    "id": "test-006",
+    "name": "Thomas Bernard",
+    "location": "Nantes",
+    "rating": 5,
+    "text": "Produits de qualité exceptionnelle et service client au top ! J'apprécie particulièrement l'engagement éthique de la marque et le soutien aux producteurs locaux.",
+    "date": "2024-11-05",
+    "product": "Mélange d'Épices Provençales"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "id": "recipe-001",
+    "title": "Poulet Mariné au Poivre de Penja",
+    "slug": "poulet-marine-poivre-penja",
+    "image": "https://images.pexels.com/photos/6163267/pexels-photo-6163267.jpeg",
+    "excerpt": "Découvrez comment sublimer votre poulet avec notre marinade au poivre de Penja",
+    "content": "Une recette simple mais délicieuse qui met en valeur les arômes exceptionnels du poivre de Penja...",
+    "ingredients": [
+      "4 cuisses de poulet",
+      "2 cuillères à soupe de Marinade Penja Classique",
+      "1 cuillère à café de Poivre de Penja Noir",
+      "Huile d'olive",
+      "Thym frais"
+    ],
+    "steps": [
+      "Mélanger la marinade avec l'huile d'olive et le thym",
+      "Badigeonner généreusement le poulet",
+      "Laisser mariner 2h minimum au réfrigérateur",
+      "Griller 30 minutes à 180°C",
+      "Servir avec du poivre de Penja fraîchement moulu"
+    ],
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "servings": 4,
+    "relatedProducts": ["prod-001", "prod-002"],
+    "category": "Plats Principaux",
+    "date": "2024-12-15"
+  },
+  {
+    "id": "recipe-002",
+    "title": "Tartines Confiture de Figues & Chèvre",
+    "slug": "tartines-confiture-figues-chevre",
+    "image": "https://images.unsplash.com/photo-1585678668451-ecd744ae0a1b",
+    "excerpt": "Un apéritif raffiné mariant la douceur de notre confiture de figues au fromage de chèvre",
+    "content": "L'alliance parfaite entre sucré et salé pour vos apéritifs...",
+    "ingredients": [
+      "Pain de campagne tranché",
+      "Confiture de Figues Terre et Saveurs",
+      "Fromage de chèvre frais",
+      "Noix concassées",
+      "Miel",
+      "Thym frais"
+    ],
+    "steps": [
+      "Toaster légèrement les tranches de pain",
+      "Étaler le fromage de chèvre",
+      "Ajouter une cuillère de confiture de figues",
+      "Parsemer de noix et d'un filet de miel",
+      "Décorer avec du thym frais"
+    ],
+    "prepTime": "10 min",
+    "cookTime": "5 min",
+    "servings": 6,
+    "relatedProducts": ["prod-005"],
+    "category": "Apéritifs",
+    "date": "2024-12-10"
+  },
+  {
+    "id": "recipe-003",
+    "title": "Mojito à la Lavande",
+    "slug": "mojito-lavande",
+    "image": "https://images.unsplash.com/photo-1530388489801-7e31e6d2bd63",
+    "excerpt": "Un twist provençal sur le classique mojito avec notre sirop de lavande",
+    "content": "Rafraîchissez vos soirées d'été avec ce cocktail original...",
+    "ingredients": [
+      "50ml de rhum blanc",
+      "30ml de Sirop de Lavande",
+      "Jus d'un citron vert",
+      "Feuilles de menthe fraîche",
+      "Eau gazeuse",
+      "Glaçons"
+    ],
+    "steps": [
+      "Piler la menthe avec le sirop de lavande dans un verre",
+      "Ajouter le jus de citron vert et le rhum",
+      "Remplir de glaçons pilés",
+      "Compléter avec l'eau gazeuse",
+      "Décorer avec une branche de lavande"
+    ],
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "servings": 1,
+    "relatedProducts": ["prod-006"],
+    "category": "Boissons",
+    "date": "2024-12-05"
+  },
+  {
+    "id": "recipe-004",
+    "title": "Curry de Légumes aux Épices Tandoori",
+    "slug": "curry-legumes-epices-tandoori",
+    "image": "https://images.unsplash.com/photo-1663325265966-0d17de3e85c5",
+    "excerpt": "Un curry végétarien parfumé avec notre mélange d'épices tandoori",
+    "content": "Un plat coloré et savoureux qui ravira les amateurs de cuisine indienne...",
+    "ingredients": [
+      "2 cuillères à soupe d'Épices Tandoori",
+      "Légumes variés (aubergine, courgette, poivrons)",
+      "Lait de coco",
+      "Tomates concassées",
+      "Oignon et ail",
+      "Huile végétale"
+    ],
+    "steps": [
+      "Faire revenir l'oignon et l'ail",
+      "Ajouter les épices tandoori et faire torréfier 1 minute",
+      "Incorporer les légumes coupés",
+      "Ajouter les tomates et le lait de coco",
+      "Mijoter 20 minutes et servir avec du riz basmati"
+    ],
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "servings": 4,
+    "relatedProducts": ["prod-008"],
+    "category": "Plats Principaux",
+    "date": "2024-11-28"
+  }
+]
