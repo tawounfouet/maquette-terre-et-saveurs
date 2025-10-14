@@ -30,7 +30,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <img 
-              src="/logo-terre-et-saveurs-nobg_300x300.png" 
+              src="https://customer-assets.emergentagent.com/job_249e6c4f-a3dd-442f-a38a-9b6fb36a43c8/artifacts/owjdn5er_logo-terre-et-saveurs-nobg_300x300.png" 
               alt="Terre et Saveurs" 
               className="h-16 w-16"
             />
