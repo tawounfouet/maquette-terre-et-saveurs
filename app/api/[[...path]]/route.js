@@ -38,47 +38,143 @@ async function handleRoute(request, { params }) {
   try {
     const db = await connectToMongo()
 
-    // Root endpoint - GET /api/root (since /api/ is not accessible with catch-all)
-    if (route === '/root' && method === 'GET') {
-      return handleCORS(NextResponse.json({ message: "Hello World" }))
-    }
-    // Root endpoint - GET /api/root (since /api/ is not accessible with catch-all)
+    // Root endpoint - GET /api/
     if (route === '/' && method === 'GET') {
-      return handleCORS(NextResponse.json({ message: "Hello World" }))
+      return handleCORS(NextResponse.json({ message: "Terre & Saveurs API", version: "1.0.0" }))
     }
 
-    // Status endpoints - POST /api/status
-    if (route === '/status' && method === 'POST') {
+    // Newsletter subscription - POST /api/newsletter
+    if (route === '/newsletter' && method === 'POST') {
       const body = await request.json()
       
-      if (!body.client_name) {
+      if (!body.email) {
         return handleCORS(NextResponse.json(
-          { error: "client_name is required" }, 
+          { error: "Email is required" }, 
           { status: 400 }
         ))
       }
 
-      const statusObj = {
+      const subscription = {
         id: uuidv4(),
-        client_name: body.client_name,
-        timestamp: new Date()
+        email: body.email,
+        subscribedAt: new Date().toISOString()
       }
 
-      await db.collection('status_checks').insertOne(statusObj)
-      return handleCORS(NextResponse.json(statusObj))
+      await db.collection('newsletter').insertOne(subscription)
+      return handleCORS(NextResponse.json({ 
+        success: true, 
+        message: "Inscription réussie!" 
+      }))
     }
 
-    // Status endpoints - GET /api/status
-    if (route === '/status' && method === 'GET') {
-      const statusChecks = await db.collection('status_checks')
+    // Orders - POST /api/orders (Create order)
+    if (route === '/orders' && method === 'POST') {
+      const body = await request.json()
+      
+      const order = {
+        id: uuidv4(),
+        ...body,
+        status: 'pending',
+        createdAt: new Date().toISOString()
+      }
+
+      await db.collection('orders').insertOne(order)
+      return handleCORS(NextResponse.json(order))
+    }
+
+    // Orders - GET /api/orders (Get all orders)
+    if (route === '/orders' && method === 'GET') {
+      const orders = await db.collection('orders')
         .find({})
-        .limit(1000)
+        .sort({ createdAt: -1 })
+        .limit(100)
         .toArray()
 
-      // Remove MongoDB's _id field from response
-      const cleanedStatusChecks = statusChecks.map(({ _id, ...rest }) => rest)
+      const cleanedOrders = orders.map(({ _id, ...rest }) => rest)
+      return handleCORS(NextResponse.json(cleanedOrders))
+    }
+
+    // Order by ID - GET /api/orders/:id
+    if (route.startsWith('/orders/') && method === 'GET') {
+      const orderId = path[1]
+      const order = await db.collection('orders').findOne({ id: orderId })
       
-      return handleCORS(NextResponse.json(cleanedStatusChecks))
+      if (!order) {
+        return handleCORS(NextResponse.json(
+          { error: "Order not found" }, 
+          { status: 404 }
+        ))
+      }
+
+      const { _id, ...cleanedOrder } = order
+      return handleCORS(NextResponse.json(cleanedOrder))
+    }
+
+    // Contact form - POST /api/contact
+    if (route === '/contact' && method === 'POST') {
+      const body = await request.json()
+      
+      if (!body.name || !body.email || !body.message) {
+        return handleCORS(NextResponse.json(
+          { error: "Name, email and message are required" }, 
+          { status: 400 }
+        ))
+      }
+
+      const contact = {
+        id: uuidv4(),
+        ...body,
+        createdAt: new Date().toISOString(),
+        status: 'new'
+      }
+
+      await db.collection('contacts').insertOne(contact)
+      return handleCORS(NextResponse.json({ 
+        success: true, 
+        message: "Message envoyé avec succès!" 
+      }))
+    }
+
+    // Cart - Save cart to DB (for persistence)
+    if (route === '/cart' && method === 'POST') {
+      const body = await request.json()
+      const sessionId = body.sessionId || uuidv4()
+      
+      const cartData = {
+        id: sessionId,
+        items: body.items,
+        updatedAt: new Date().toISOString()
+      }
+
+      await db.collection('carts').updateOne(
+        { id: sessionId },
+        { $set: cartData },
+        { upsert: true }
+      )
+
+      return handleCORS(NextResponse.json({ 
+        success: true,
+        sessionId 
+      }))
+    }
+
+    // Cart - Get cart from DB
+    if (route === '/cart' && method === 'GET') {
+      const url = new URL(request.url)
+      const sessionId = url.searchParams.get('sessionId')
+      
+      if (!sessionId) {
+        return handleCORS(NextResponse.json({ items: [] }))
+      }
+
+      const cart = await db.collection('carts').findOne({ id: sessionId })
+      
+      if (!cart) {
+        return handleCORS(NextResponse.json({ items: [] }))
+      }
+
+      const { _id, ...cleanedCart } = cart
+      return handleCORS(NextResponse.json(cleanedCart))
     }
 
     // Route not found
@@ -90,7 +186,7 @@ async function handleRoute(request, { params }) {
   } catch (error) {
     console.error('API Error:', error)
     return handleCORS(NextResponse.json(
-      { error: "Internal server error" }, 
+      { error: "Internal server error", details: error.message }, 
       { status: 500 }
     ))
   }
