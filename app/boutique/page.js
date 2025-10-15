@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import ProductCard from '@/components/ProductCard'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -10,7 +10,7 @@ import productsData from '@/lib/data/products.json'
 import { searchProducts, sortProducts, getProductsByCategory } from '@/lib/utils'
 import { useSearchParams } from 'next/navigation'
 
-export default function BoutiquePage() {
+function BoutiqueContent() {
   const searchParams = useSearchParams()
   const categoryParam = searchParams.get('category')
 
@@ -180,5 +180,20 @@ export default function BoutiquePage() {
         )}
       </div>
     </div>
+  )
+}
+
+export default function BoutiquePage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-lg text-gray-600">Chargement de la boutique...</p>
+        </div>
+      </div>
+    }>
+      <BoutiqueContent />
+    </Suspense>
   )
 }
