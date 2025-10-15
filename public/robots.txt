@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://votre-domaine-vercel.vercel.app/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /.next/
+
+# Allow important pages
+Allow: /
+Allow: /boutique
+Allow: /a-propos
+Allow: /contact
+Allow: /recettes
+Allow: /boutique/produit/

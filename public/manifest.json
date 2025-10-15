@@ -1,0 +1,45 @@
+{
+    "name": "Terre & Saveurs - Épicerie Fine Africaine",
+    "short_name": "Terre & Saveurs",
+    "description": "Découvrez nos produits artisanaux d'exception : poivre de Penja IGP, marinades gourmets, épices africaines authentiques.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#8B4513",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "fr",
+    "icons": [
+        {
+            "src": "/logo-terre-et-saveurs-nobg_300x300.png",
+            "sizes": "300x300",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/logo-terre-et-saveurs-nobg_300x300.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/logo-terre-et-saveurs-nobg_300x300.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "categories": [
+        "food",
+        "shopping",
+        "business"
+    ],
+    "screenshots": [
+        {
+            "src": "/image-depices.webp",
+            "sizes": "1200x630",
+            "type": "image/webp",
+            "form_factor": "wide"
+        }
+    ]
+}

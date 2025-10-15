@@ -8,6 +8,9 @@ const nextConfig = {
     serverComponentsExternalPackages: ['mongodb'],
   },
   webpack(config, { dev }) {
+    // Ensure webpack can resolve .jsx files
+    config.resolve.extensions.push('.jsx');
+    
     if (dev) {
       // Reduce CPU/memory from file watching
       config.watchOptions = {
