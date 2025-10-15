@@ -62,7 +62,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <h1 className="text-center text-white">Contactez-Nous</h1>
           <p className="text-center text-xl mt-4 text-gray-200">
-            Une question ? Un conseil ? N'hésitez pas à nous écrire !
+            Questions diverses ? Demande de devis ? Nous sommes à votre service !
+          </p>
+          <p className="text-center text-lg mt-2 text-gray-300">
+            Depuis 2021, Terre et saveurs, basé à Bruxelles importe le poivre de Penja grand cru directement des plantations familiales situées au Cameroun afin de ravir les papilles des amateurs de poivre et de produits gourmet.
           </p>
         </div>
       </div>
@@ -74,11 +77,9 @@ export default function ContactPage() {
             <Card>
               <CardContent className="pt-6">
                 <MapPin className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-lg font-heading font-semibold mb-2">Adresse</h3>
+                <h3 className="text-lg font-heading font-semibold mb-2">Ma Localisation</h3>
                 <p className="text-gray-600">
-                  123 Rue de la Gastronomie<br />
-                  75001 Paris<br />
-                  France
+                  Belgique, Bruxelles
                 </p>
               </CardContent>
             </Card>
@@ -98,11 +99,9 @@ export default function ContactPage() {
             <Card>
               <CardContent className="pt-6">
                 <Mail className="h-10 w-10 text-primary mb-4" />
-                <h3 className="text-lg font-heading font-semibold mb-2">Email</h3>
+                <h3 className="text-lg font-heading font-semibold mb-2">E-mail</h3>
                 <p className="text-gray-600">
-                  <a href="mailto:contact@terreetsaveurs.fr" className="hover:text-primary transition-colors">
-                    contact@terreetsaveurs.fr
-                  </a>
+                  Utilisez le formulaire de contact ci-dessous
                 </p>
               </CardContent>
             </Card>
@@ -112,31 +111,18 @@ export default function ContactPage() {
                 <Clock className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-lg font-heading font-semibold mb-2">Horaires</h3>
                 <p className="text-gray-600">
-                  Lundi - Vendredi : 9h - 18h<br />
-                  Samedi : 10h - 17h<br />
-                  Dimanche : Fermé
+                  Lundi – Vendredi: 9h – 17h
                 </p>
               </CardContent>
             </Card>
 
-            {/* Social Media */}
+            {/* Livraison Info */}
             <Card className="bg-accent">
               <CardContent className="pt-6">
-                <h3 className="text-lg font-heading font-semibold mb-4">Suivez-nous</h3>
-                <div className="flex gap-4">
-                  <a href="#" className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors">
-                    <span className="sr-only">Facebook</span>
-                    f
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors">
-                    <span className="sr-only">Instagram</span>
-                    @
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-hover transition-colors">
-                    <span className="sr-only">Twitter</span>
-                    𝕏
-                  </a>
-                </div>
+                <h3 className="text-lg font-heading font-semibold mb-4">Livraison</h3>
+                <p className="text-gray-700 font-medium">
+                  🚚 Livraison gratuite en Belgique dès 50€ d'achat
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -146,6 +132,9 @@ export default function ContactPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Envoyez-nous un message</CardTitle>
+                <p className="text-gray-600">
+                  Remplissez le formulaire de contact ci-dessous puis cliquez sur "Envoyer". Nous prendrons contact avec vous dans les meilleurs délais.
+                </p>
               </CardHeader>
               <CardContent>
                 {success && (
@@ -161,6 +150,7 @@ export default function ContactPage() {
                       <Input
                         id="firstName"
                         required
+                        placeholder="Votre prénom"
                         value={formData.firstName}
                         onChange={(e) => setFormData({...formData, firstName: e.target.value})}
                       />
@@ -170,6 +160,7 @@ export default function ContactPage() {
                       <Input
                         id="lastName"
                         required
+                        placeholder="Votre nom de famille"
                         value={formData.lastName}
                         onChange={(e) => setFormData({...formData, lastName: e.target.value})}
                       />
@@ -183,6 +174,7 @@ export default function ContactPage() {
                         id="email"
                         type="email"
                         required
+                        placeholder="votre.email@exemple.com"
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
                       />
@@ -192,6 +184,7 @@ export default function ContactPage() {
                       <Input
                         id="phone"
                         type="tel"
+                        placeholder="+32 123 45 67 89"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       />
@@ -205,7 +198,7 @@ export default function ContactPage() {
                       required
                       value={formData.subject}
                       onChange={(e) => setFormData({...formData, subject: e.target.value})}
-                      placeholder="Question, commande, partenariat..."
+                      placeholder="Question sur vos produits, demande de devis, partenariat..."
                     />
                   </div>
 
@@ -217,7 +210,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       rows={8}
-                      placeholder="Décrivez votre demande en détail..."
+                      placeholder="Bonjour,&#10;&#10;Je vous contacte concernant...&#10;&#10;Merci de votre retour.&#10;&#10;Cordialement,"
                     />
                   </div>
 
@@ -245,7 +238,10 @@ export default function ContactPage() {
                   <div className="text-center text-gray-600">
                     <MapPin className="h-16 w-16 mx-auto mb-4" />
                     <p className="text-lg font-semibold">Google Maps</p>
-                    <p className="text-sm">123 Rue de la Gastronomie, Paris</p>
+                    <p className="text-sm">Belgique, Bruxelles</p>
+                    <p className="text-xs mt-2 text-gray-500">
+                      Terre et Saveurs - Épicerie Fine Africaine
+                    </p>
                   </div>
                 </div>
               </CardContent>

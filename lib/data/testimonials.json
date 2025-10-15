@@ -1,56 +1,56 @@
 [
   {
     "id": "test-001",
-    "name": "Sophie Martin",
-    "location": "Paris",
+    "name": "Joséphine J",
+    "location": "France",
     "rating": 5,
-    "text": "Le poivre de Penja est tout simplement exceptionnel ! J'ai découvert des saveurs que je ne connaissais pas. La qualité est au rendez-vous et le service client est irréprochable.",
+    "text": "Je cherchais un bon poivre et j'ai testé le poivre de Penja. C'est un excellent produit, agréablement parfumé qui rehausse la plupart de mes recettes, un poivre de grande qualité et un basique indispensable!",
     "date": "2024-12-01",
-    "product": "Poivre de Penja Noir"
+    "product": "Poivre de Penja"
   },
   {
     "id": "test-002",
-    "name": "Marc Dubois",
-    "location": "Lyon",
+    "name": "Sylvie",
+    "location": "Washington",
     "rating": 5,
-    "text": "Les marinades sont délicieuses ! J'ai essayé la marinade classique au Penja et mes barbecues n'ont jamais été aussi réussis. Mes invités me demandent toujours la recette !",
+    "text": "Le poivre de Penja par la magie de Terre & Saveurs est arrivé chez moi à Washington. Que puis-je vous dire si ce n'est sa saveur incomparable ! Je n'avais jamais goûté un poivre comme celui-ci et pourtant, je suis amatrice de poivres de différents pays. Je ne peux plus m'en passer. Un arôme unique",
     "date": "2024-11-25",
-    "product": "Marinade Penja Classique"
+    "product": "Poivre de Penja"
   },
   {
     "id": "test-003",
-    "name": "Isabelle Rousseau",
-    "location": "Bordeaux",
+    "name": "Nadine M.",
+    "location": "France",
     "rating": 5,
-    "text": "La confiture de figues est une tuerie ! Texture parfaite, goût authentique. On sent vraiment la qualité des produits et le savoir-faire artisanal. Je recommande à 200% !",
+    "text": "Le poivre de Penja a changé mon image du poivre, sa saveur, son parfum... Aujourd'hui je l'utilise dans tous mes repas sans exception, légumes, sauces, vinaigrette, viande... J'en mets même dans la nourriture de mon petit de 2 ans. Mon mari préfère que ça soit moi qui cuisine les steaks car il les trouve meilleurs. Mon secret, c'est le poivre de penja.",
     "date": "2024-11-20",
-    "product": "Confiture de Figues"
+    "product": "Poivre de Penja"
   },
   {
     "id": "test-004",
-    "name": "Jean-Pierre Lefort",
-    "location": "Marseille",
+    "name": "Become Community TV",
+    "location": "Belgique",
     "rating": 5,
-    "text": "En tant que chef cuisinier, je suis très exigeant sur la qualité des épices. Terre et Saveurs propose des produits d'exception qui subliment mes plats. Le poivre rouge est une pépite rare.",
+    "text": "Merci à Laurence qui m'avait offert un petit échantillon de son poivre de Penja, quelle merveille ! Dernièrement, j'ai découvert ses sirops d'hibiscus et de gingembre, j'ai adoré. Félicitation pour la qualité de produits Terre et Saveurs",
     "date": "2024-11-15",
-    "product": "Poivre de Penja Rouge"
+    "product": "Poivre de Penja, Sirops"
   },
   {
     "id": "test-005",
-    "name": "Amélie Petit",
-    "location": "Toulouse",
+    "name": "Arame Diaw",
+    "location": "France",
     "rating": 5,
-    "text": "Les sirops sont parfaits pour mes cocktails maison ! Le sirop de lavande apporte une touche provençale unique. Livraison rapide et emballage soigné.",
+    "text": "Des poivres d'exception, dont les saveurs et les parfums savent convaincre les clients gourmets les plus exigeants, de mon épicerie. Ils en sont ravis et moi ravie du professionnalisme et de l'amabilité de Laurence la fondatrice de Terre et Saveurs.",
     "date": "2024-11-10",
-    "product": "Sirop de Lavande"
+    "product": "Poivres"
   },
   {
     "id": "test-006",
-    "name": "Thomas Bernard",
-    "location": "Nantes",
+    "name": "Mattia Starace",
+    "location": "Italie",
     "rating": 5,
-    "text": "Produits de qualité exceptionnelle et service client au top ! J'apprécie particulièrement l'engagement éthique de la marque et le soutien aux producteurs locaux.",
+    "text": "Le professionnalisme et l'envie de faire toujours mieux sont les mots clés de l'esprit de TERRE ET SAVEURS. Je vous recommande le poivre noir proposé par madame Laurence: vous allez tomber amoureux",
     "date": "2024-11-05",
-    "product": "Mélange d'Épices Provençales"
+    "product": "Poivre de Penja Noir"
   }
 ]

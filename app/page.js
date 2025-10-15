@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent } from '@/components/ui/card'
 import Link from 'next/link'
-import { Star, Award, Heart, Leaf } from 'lucide-react'
+import { Star, Award, Heart, Leaf, Truck, Recycle, Zap } from 'lucide-react'
 import productsData from '@/lib/data/products.json'
 import recipesData from '@/lib/data/recipes.json'
 import testimonialsData from '@/lib/data/testimonials.json'
@@ -62,9 +62,12 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <Hero 
-        title="Terre & Saveurs"
-        subtitle="Découvrez nos produits artisanaux d'exception"
-        image="https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg"
+        title="ÉPICERIE FINE AFRICAINE"
+        subtitle="Éveillez vos sens avec les saveurs africaines"
+        image="/image-depices.webp"
+        // image="/Est-il-preferable-de-manger-de-la-viande-ou-du-poisson.webp"
+
+        // image="https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg"
         ctaPrimary={{ text: 'Découvrir la Boutique', href: '/boutique' }}
         ctaSecondary={{ text: 'Nos Recettes', href: '/recettes' }}
       />
@@ -74,15 +77,21 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="mb-6 text-primary">L'Art de la Gastronomie</h2>
+              <h2 className="mb-6 text-primary">Découvrez Terre et Saveurs</h2>
               <p className="text-lg mb-6 text-gray-700">
-                Terre & Saveurs est né de la passion de Laurence pour les saveurs authentiques 
-                et les produits d'exception. Chaque produit est sélectionné avec soin, en privilégiant 
-                les producteurs locaux et les partenariats solidaires.
+                Découvrez Terre et Saveurs, l'épicerie fine africaine qui répond à la demande croissante de produits 
+                rares, gastronomiques et naturels en provenance du continent africain. Nous sommes déterminés à 
+                promouvoir et transmettre les cultures culinaires africaines à travers une gamme variée de produits 
+                du quotidien, simples à utiliser et inspirés de la gastronomie africaine.
               </p>
               <p className="text-lg mb-6 text-gray-700">
-                Notre poivre de Penja, notre fierté, provient directement du Cameroun et bénéficie 
-                d'une IGP garantissant son authenticité et sa qualité exceptionnelle.
+                Notre engagement en faveur de l'inclusion culturelle de la gastronomie africaine en Europe se reflète 
+                dans nos valeurs de durabilité, de solidarité et surtout d'authenticité et de qualité. Nous garantissons 
+                la traçabilité totale de nos produits, du producteur au consommateur final.
+              </p>
+              <p className="text-lg mb-6 text-gray-700">
+                La formule est simple : un produit du terroir, des épices sélectionnées avec soin, une recette traditionnelle, 
+                un savoir-faire artisanal et une touche de créativité.
               </p>
               <Link href="/a-propos">
                 <Button className="btn-primary">En Savoir Plus</Button>
@@ -90,7 +99,8 @@ export default function HomePage() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1654158168200-f8e241edb386" 
+                src="/Est-il-preferable-de-manger-de-la-viande-ou-du-poisson.webp"
+                // src="https://images.unsplash.com/photo-1654158168200-f8e241edb386" 
                 alt="Notre histoire"
                 className="rounded-lg shadow-xl w-full h-[400px] object-cover"
               />
@@ -99,45 +109,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center mb-12 text-primary">Nos Valeurs</h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-8">
-                <Award className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-xl font-heading font-semibold mb-3">Qualité Premium</h3>
-                <p className="text-gray-600">Sélection rigoureuse de produits d'exception</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-8">
-                <Heart className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-xl font-heading font-semibold mb-3">Artisanal</h3>
-                <p className="text-gray-600">Savoir-faire traditionnel et authentique</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-8">
-                <Leaf className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-xl font-heading font-semibold mb-3">Éthique</h3>
-                <p className="text-gray-600">Partenariats solidaires et commerce équitable</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="pt-8">
-                <Star className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-xl font-heading font-semibold mb-3">Excellence</h3>
-                <p className="text-gray-600">Engagement qualité à chaque étape</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
-      {/* Featured Products */}
-      <section className="py-20 bg-accent">
+       {/* Featured Products */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="mb-4 text-primary">Nos Coups de Coeur</h2>
@@ -194,6 +168,135 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Nos Spécialités */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-center mb-12 text-primary">Nos Spécialités</h2>
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="bg-primary text-white p-3 rounded-full">
+                    <Star className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-2xl font-heading font-bold text-primary">Nos Marinades</h3>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Marinade gourmet prête à l'emploi, 100% végétale
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Sans additif ni conservateur, naturelle et savoureuse
+                </p>
+                <p className="text-gray-700 mb-6">
+                  3 saveurs : Poulet, Poisson, Viande
+                </p>
+                <Link href="/boutique?category=marinades">
+                  <Button className="btn-primary">Acheter</Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="bg-secondary text-white p-3 rounded-full">
+                    <Award className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-2xl font-heading font-bold text-primary">Nos Piments</h3>
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Deux saveurs relevées pour éveiller vos papilles
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Piment et Piment du Pays, intenses et authentiques
+                </p>
+                <p className="text-gray-700 mb-6">
+                  100% naturelles, sans additif ni conservateur
+                </p>
+                <Link href="/boutique?category=piments">
+                  <Button className="btn-primary">Acheter</Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Caractéristiques */}
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="bg-primary/10 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-10 w-10 text-primary" />
+              </div>
+              <h4 className="font-heading font-semibold text-lg mb-2">Production ARTISANALE</h4>
+            </div>
+            <div>
+              <div className="bg-secondary/10 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Star className="h-10 w-10 text-secondary" />
+              </div>
+              <h4 className="font-heading font-semibold text-lg mb-2">Recettes ORIGINALES ÉPICÉES</h4>
+            </div>
+            <div>
+              <div className="bg-primary/10 p-6 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Leaf className="h-10 w-10 text-primary" />
+              </div>
+              <h4 className="font-heading font-semibold text-lg mb-2">Fabriqué en BELGIQUE</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-accent">
+        <div className="container mx-auto px-4">
+          <h2 className="text-center mb-12 text-primary">Nos Valeurs</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="pt-8">
+                <Award className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-heading font-semibold mb-3">Qualité</h3>
+                <p className="text-gray-600">Qualité d'Afrique</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="pt-8">
+                <Leaf className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-heading font-semibold mb-3">La Nature</h3>
+                <p className="text-gray-600">Produits 100% naturels et bio</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="pt-8">
+                <Truck className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-heading font-semibold mb-3">Livraison</h3>
+                <p className="text-gray-600">Gratuite à partir de 50€</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="pt-8">
+                <Recycle className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-heading font-semibold mb-3">Respect de l'environnement</h3>
+                <p className="text-gray-600">Le respect de l'environnement</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="pt-8">
+                <Zap className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-heading font-semibold mb-3">Fraîcheur</h3>
+                <p className="text-gray-600">Nous prenons soin de nos produits pour qu'ils restent frais et savoureux</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardContent className="pt-8">
+                <Heart className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-heading font-semibold mb-3">Le Plaisir</h3>
+                <p className="text-gray-600">Nous aimons créer des produits délicieux avec passion et créativité</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+     
 
       {/* Recipe Highlights */}
       <section className="py-20 bg-accent">
